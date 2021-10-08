@@ -1,0 +1,23 @@
+# Note: this is a relatively small container - intended
+# for running production javascript code only. If you rely
+# on system tools or find this doesn't work for your setup,
+# consider 'FROM node:16' instead.
+
+# Node 16 was chosen only because it's the current LTS
+FROM node:16-slim as builder
+
+WORKDIR /app
+
+COPY ./package*.json ./
+
+RUN npm ci --only=production
+
+FROM builder as deployable
+
+COPY ./ ./
+
+# Note: this is just for documentation of the default port.
+# It doesn't do anything. At all.
+EXPOSE 3000
+
+CMD [ "npm", "run", "start" ]

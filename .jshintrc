@@ -1,0 +1,22 @@
+{
+  "esversion": 11,
+  "node": true,
+  "browser": true,
+  "curly": true,
+  "sub": true,
+  "bitwise": true,
+  "eqeqeq": true,
+  "forin": true,
+  "freeze": true,
+  "immed": true,
+  "latedef": "nofunc",
+  "nonbsp": true,
+  "nonew": true,
+  "plusplus": true,
+  "undef": true,
+  "unused": "vars",
+  "strict": true,
+  "maxdepth": 3,
+  "maxstatements": 100,
+  "maxcomplexity": 10
+}

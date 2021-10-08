@@ -1,0 +1,29 @@
+{
+  "name": "docker-seed",
+  "version": "0.1.0",
+  "description": "Another of AJ's Auth libraries",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "npx prettier@2.x -w '**/*.{js,md}'",
+    "test": "node ./test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coolaj86/node-docker-seed.git"
+  },
+  "author": "AJ ONeal <coolaj86@gmail.com> (https://coolaj86.com/)",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/coolaj86/node-docker-seed/issues"
+  },
+  "homepage": "https://github.com/coolaj86/node-docker-seed#readme",
+  "dependencies": {
+    "@root/async-router": "^1.0.10",
+    "@root/request": "^1.7.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "keyfetch": "^2.0.0",
+    "morgan": "^1.10.0"
+  }
+}
