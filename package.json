@@ -1,9 +1,10 @@
 {
-  "name": "docker-seed",
+  "name": "node-paypal-demo",
   "version": "0.1.0",
-  "description": "Another of AJ's Auth libraries",
+  "description": "A PayPal Checkout demo for one-time purchases, and subscriptions",
   "main": "index.js",
   "scripts": {
+    "postinstall": "node utils/make-categories.js",
     "prettier": "npx prettier@2.x -w '**/*.{js,md}'",
     "test": "node ./test.js"
   },
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/coolaj86/node-docker-seed#readme",
   "dependencies": {
+    "@paypal/checkout-server-sdk": "^1.0.3",
     "@root/async-router": "^1.0.10",
     "@root/request": "^1.7.0",
     "body-parser": "^1.19.0",
